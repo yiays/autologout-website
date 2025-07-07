@@ -3,7 +3,7 @@ $title = "Legal";
 include('../includes/header.php');
 ?>
 <h3>Privacy Policy</h3>
-<p>Select a product to read the relevant privacy policy.</p>
+<p class="lead">Select a product to read the relevant privacy policy.</p>
 
 <div class="autohide-panel" id="autologout-for-windows">
   <div class="panel-header">

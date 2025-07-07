@@ -24,11 +24,36 @@
       text-decoration: none;
     }
     a:hover {
-      color:rgb(25, 156, 216);
+      color: rgb(25, 156, 216);
+    }
+
+    .btn {
+      font-size: 1.1rem;
+      display: inline-block;
+      background: #0275ac;
+      padding: 0.5rem 1rem;
+      color: white!important;
+      box-shadow: rgba(0, 0, 0, 0.5) 0 0.1rem 0.3rem;
+    }
+    .btn:not(:last-child) {
+      margin-bottom: 0.5rem;
+      margin-right: 0.5rem;
+    }
+    .btn:hover {
+      background: rgb(25, 156, 216);
+    }
+    .btn.secondary {
+      color: black!important;
+      background: #eee;
+    }
+    .btn.secondary:hover {
+      background: #fff;
     }
 
     body {
       position: relative;
+      display: flex;
+      flex-direction: column;
       font-family: 'Roboto';
       margin: 0;
       min-height: 100vh;
@@ -39,22 +64,35 @@
       background: #E0D8E2;
       background: radial-gradient(circle, #e0d8e2 0%, #9296d2 100%);
       padding: 1rem;
+      min-height: 3rem;
     }
-    header > img {
+    header > .logo {
       position: absolute;
       top: 1em;
       left: 1em;
       width: 3em;
       height: 3em;
     }
+    .logo > img {
+      width: inherit;
+      height: inherit;
+    }
     header > h1 {
       margin-top: 0.3rem;
       margin-left: 4rem;
       margin-bottom: 0.3rem;
     }
-    header > h1 > a {
+    header a {
       color: white !important;
       text-shadow: rgba(0, 0, 0, 0.5) 0 0 0.5em;
+    }
+    header > nav {
+      position: absolute;
+      top: 0.9rem;
+      right: 0;
+    }
+    nav > a {
+      border-color: white !important;
     }
     header > h2 {
       display: inline-block;
@@ -66,25 +104,31 @@
     }
 
     main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       max-width: min(100ch, 90vw);
       margin: 0 auto;
-      padding-bottom: 3rem;
+      padding-bottom: 1rem;
     }
 
     footer {
-      position: absolute;
+      margin-top: auto;
       background: #eee;
-      bottom: 0;
-      left: 0;
-      right: 0;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
       text-align: center;
       padding: 1rem;
     }
-    footer > a {
+    .links > a {
       display: inline-block;
       padding: 0 1em;
     }
-    footer > a:not(:last-of-type) {
+    .links > a:not(:last-of-type) {
       border-right: 1px solid black;
     }
 
@@ -134,12 +178,36 @@
       height: 30em;
       box-shadow: rgba(0, 0, 0, 0.3) 0 0.3em 0.5em;
     }
+
+    .shadow-screenshot {
+      width: auto;
+      height: 30rem;
+      z-index: -10;
+      pointer-events: none;
+      transform: scale(75%);
+    }
+    .shadow-screenshot.small {
+      height: 20rem;
+    }
+    .shadow-screenshot.vertical {
+      height: 45rem;
+    }
+
+    .lead {
+      font-size: 1.25em;
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="/img/AutoLogout.svg" alt="Logo" width="256" height="256"/>
+    <a href="/" class="logo">
+      <img src="/img/AutoLogout.svg" alt="Logo" width="256" height="256"/>
+    </a>
     <h1><a href="/">AutoLogout</a></h1>
+    <nav class="links">
+      <a href="/download/">Download</a>
+      <a href="/app/">AutoLogout Manager</a>
+    </nav>
     <?php echo isset($title)? "<h2>$title</h2>": "" ?>
   </header>
 

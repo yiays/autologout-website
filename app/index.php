@@ -2,7 +2,7 @@
 $title = "AutoLogout Manager";
 include('../includes/header.php');
 ?>
-<p style="font-size: 1.25em;">
+<p class="lead">
   AutoLogout Manager is an app that enables you to link to and remotely manage any accounts that
   have AutoLogout installed.
 </p>
