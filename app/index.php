@@ -17,15 +17,34 @@ include('../includes/header.php');
     Install on Android
   </a>
   <div class="panel-content">
+    <strong>Google Play Store</strong>
     <p>
       The app is currently in the review process and is not yet available to download. Check back here
       later!
     </p>
-    <!--<p>You can install AutoLogout manager using any of the following methods;</p>
-    <ul>
-      <li><a href="https://play.google.com/store/apps/details?id=com.yiays.autologoutmanager">Google Play Store</a></li>
-      <li><a href="https://f-droid.org/en/packages/com.yiays.autologoutmanager">F-Droid</a></li>
-    </ul>-->
+    <!--
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.yiays.autologoutmanager" target="_blank">
+      Install with Google Play Store
+    </a>
+    <br>
+    <strong>F-Droid</strong>
+    <a class="btn" href="https://f-droid.org/en/packages/com.yiays.autologoutmanager" target="_blank">
+      Install with F-Droid
+    </a>
+    <br>
+    -->
+    <strong><i>Sideload (advanced)</i></strong>
+    <p>
+      If you are comfortable with sideloading and manually checking for updates, you can install
+      the app via sideloading.
+    </p>
+    <a class="btn secondary" href="https://github.com/yiays/AutoLogout-Manager/releases/tag/v0.0.1" target="_blank">
+      Download APK via GitHub
+    </a>
+    <br>
+    <a class="btn secondary" href="https://github.com/yiays/AutoLogout-Manager" target="_blank">
+      View source code
+    </a>
   </div>
 </div>
 
