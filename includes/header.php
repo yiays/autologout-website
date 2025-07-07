@@ -135,23 +135,26 @@
     .autohide-panel {
       margin-bottom: 1rem;
     }
+    .autohide-panel:target {
+      width: 100%;
+    }
     .panel-header {
-      font-size: 1.25em;
       display: block;
+      font-size: 1.25em;
       padding: 1rem 2rem 1rem 1rem;
       background: #eee;
     }
-    .autohide-hide, .autohide-show {
-      display: inline-block;
+    .panel-header > span {
+      color: black;
       width: 1em;
       height: 1em;
       text-align: center;
       margin-inline: 0.5rem;
     }
-    .autohide-panel:not(:target) > .panel-header > .autohide-hide {
+    .autohide-panel:not(:target) .autohide-hide {
       display: none;
     }
-    .autohide-panel:target > .panel-header > .autohide-show {
+    .autohide-panel:target .autohide-show {
       display: none;
     }
     .autohide-panel > .panel-content {
@@ -175,7 +178,7 @@
     }
     .carousel > img {
       width: auto;
-      height: 30em;
+      height: 25em;
       box-shadow: rgba(0, 0, 0, 0.3) 0 0.3em 0.5em;
     }
 

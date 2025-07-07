@@ -8,13 +8,14 @@ include('../includes/header.php');
 </p>
 
 <div class="autohide-panel" id="android">
-  <div class="panel-header">
-    <span class="autohide-show">&gt;</span>
-    <a href="#" class="autohide-hide">&darr;</a>
-    <a class="autohide-button" href="#android">
-      Install on Android
-    </a>
-  </div>
+  <a href="#android" class="panel-header autohide-show">
+    <span>&gt;</span>
+    Install on Android
+  </a>
+  <a href="#" class="panel-header autohide-hide">
+    <span>&darr;</span>
+    Install on Android
+  </a>
   <div class="panel-content">
     <p>
       The app is currently in the review process and is not yet available to download. Check back here
@@ -29,13 +30,14 @@ include('../includes/header.php');
 </div>
 
 <div class="autohide-panel" id="ios">
-  <div class="panel-header">
-    <span class="autohide-show">&gt;</span>
-    <a href="#" class="autohide-hide">&darr;</a>
-    <a class="autohide-button" href="#ios">
-      Install on iOS / iPadOS
-    </a>
-  </div>
+  <a href="#ios" class="panel-header autohide-show">
+    <span>&gt;</span>
+    Install on iOS / iPadOS
+  </a>
+  <a href="#" class="panel-header autohide-hide">
+    <span>&darr;</span>
+    Install on iOS / iPadOS
+  </a>
   <div class="panel-content">
     <p>
       The costs associated are currently too high to release an App Store version. Consider
