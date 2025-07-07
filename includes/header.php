@@ -196,6 +196,37 @@
     .lead {
       font-size: 1.25em;
     }
+
+    @media screen and (max-width: 40em) {
+      .links {
+        flex-direction: column;
+        padding: 0 1rem;
+      }
+      .links > a {
+        padding: 0.5em 0;
+      }
+      .links > a:not(:last-of-type) {
+        border-right: none;
+        border-bottom: 1px solid;
+      }
+
+      nav {
+        top: 0;
+        margin-top: -0.5rem;
+      }
+
+      .shadow-screenshot {
+        height: auto!important;
+        max-width: 90vw;
+      }
+    }
+
+    @media screen and (max-width: 26rem) {
+      header > h1 {
+        font-size: 1rem;
+        margin-top: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
