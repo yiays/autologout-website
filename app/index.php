@@ -38,7 +38,7 @@ include('../includes/header.php');
       If you are comfortable with sideloading and manually checking for updates, you can install
       the app via sideloading.
     </p>
-    <a class="btn secondary" href="https://github.com/yiays/AutoLogout-Manager/releases/tag/v0.0.1" target="_blank">
+    <a class="btn secondary" href="https://github.com/yiays/AutoLogout-Manager/releases/tag/v0.0.2" target="_blank">
       Download APK via GitHub
     </a>
     <br>
