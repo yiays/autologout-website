@@ -27,6 +27,31 @@
       color: rgb(25, 156, 216);
     }
 
+    code {
+      position: relative;
+      display: inline-block;
+      background: black;
+      color: white;
+      padding: 1em;
+      padding-right: 4em;
+      margin-bottom: 1em;
+    }
+
+    code .copy {
+      position: absolute;
+      top: 0.2em;
+      right: 0.5em;
+    }
+
+    .copy {
+      font-size: 2em;
+      color: rgb(25, 156, 216);
+      cursor: pointer;
+    }
+    .copy:hover {
+      color: rgb(106, 190, 229);
+    }
+
     .btn {
       font-size: 1.1rem;
       display: inline-block;
