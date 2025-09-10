@@ -26,7 +26,7 @@ include('../includes/header.php');
       Download from GitHub
     </a>
     <br>
-    <strong>Install from the command line</strong>
+    <!--<strong>Install from the command line</strong>
     <p>
       Download or update AutoLogout anytime using your terminal.
     </p>
@@ -34,7 +34,7 @@ include('../includes/header.php');
       winget install Yiays.AutoLogout
       <span class="copy" title="Copy to clipboard" onclick="navigator.clipboard.writeText(`winget install Yiays.AutoLogout`)">&#x2398;</span>
     </code>
-    <br/>
+    <br/>-->
     <strong>Portable</strong>
     <p>
       With a portable installation, you will need to find a place to keep the application. You might
