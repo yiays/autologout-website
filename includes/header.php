@@ -84,11 +84,12 @@
       min-height: 100vh;
     }
     header {
-      position: relative;
+      position: sticky;
       color: white;
       background: #E0D8E2;
       background: radial-gradient(circle, #e0d8e2 0%, #9296d2 100%);
       padding: 1rem;
+      top: 0;
       min-height: 3rem;
     }
     header > .logo {
@@ -135,6 +136,14 @@
       max-width: min(100ch, 90vw);
       margin: 0 auto;
       padding-bottom: 1rem;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - 6rem);
     }
 
     footer {
@@ -222,7 +231,7 @@
     }
 
     .lead {
-      font-size: 1.25em;
+      font-size: 1.3em;
     }
 
     @media screen and (max-width: 40em) {
