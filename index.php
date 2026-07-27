@@ -4,7 +4,7 @@ include('includes/header.php');
 <section>
   <h2 style="font-weight: 400">Finally. Simple parental controls for Windows</h2>
   <img
-    class="shadow-screenshot small" src="/img/client.png" width="509" height="364"
+    class="shadow-screenshot small" src="/img/newclient.png" width="480" height="328"
     alt="Screenshot of AutoLogout with a 2 hour time limit"
   >
   
@@ -22,7 +22,7 @@ include('includes/header.php');
 
 <section>
   <img
-    class="shadow-screenshot" src="/img/client-controlpanel.png" width="632" height="563"
+    class="shadow-screenshot" src="/img/newclient-controlpanel.png" width="848" height="862"
     alt="Screenshot of AutoLogout settings, shows usage, time limits, downtime controls."
   >
   <p class="lead">
@@ -37,7 +37,7 @@ include('includes/header.php');
 
 <section>
   <img
-    class="shadow-screenshot vertical" src="/img/app-mobile.png" width="744" height="1291"
+    class="shadow-screenshot vertical" src="/img/client-mobile.png" width="744" height="1291"
     alt="AutoLogout app within a phone, has the same controls as the control panel."
   >
   <p class="lead">

@@ -221,13 +221,15 @@
       height: 30rem;
       z-index: -10;
       pointer-events: none;
-      transform: scale(75%);
+      filter: drop-shadow(rgba(0,0,0,0.25) 0 0 1em);
     }
     .shadow-screenshot.small {
       height: 20rem;
+      transform: scale(75%);
     }
     .shadow-screenshot.vertical {
       height: 45rem;
+      transform: scale(75%);
     }
 
     .lead {
