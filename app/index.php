@@ -6,6 +6,9 @@ include('../includes/header.php');
   AutoLogout Manager is an app that enables you to link to and remotely manage any accounts that
   have AutoLogout installed.
 </p>
+<p class="show-win show-mac show-linux">
+  Looking for the PC app?&nbsp;<a href="/download/#stable">Click here</a>.
+</p>
 
 <div class="autohide-panel" id="android">
   <a href="#android" class="panel-header autohide-show">
@@ -17,23 +20,24 @@ include('../includes/header.php');
     Install on Android
   </a>
   <div class="panel-content">
-    <strong>Google Play Store (recommended)</strong>
+    <strong>Google Play Store <span class="rec">recommended</span></strong>
     <p>
-      AutoLogout Manager has launched as an early access app on the Google Play store! Download it
-      from there for the best experience.
+      AutoLogout Manager has launched on the Google Play store! Download it from there for the best experience.
     </p>
     <a class="btn" href="https://play.google.com/store/apps/details?id=com.yiays.autologoutmanager" target="_blank">
       Install with Google Play Store
     </a>
-    <br>
+    <hr>
+
     <!--
     <strong>F-Droid</strong>
     <a class="btn" href="https://f-droid.org/en/packages/com.yiays.autologoutmanager" target="_blank">
       Install with F-Droid
     </a>
+    <hr>
     -->
-    <br>
-    <strong><i>Sideload (advanced)</i></strong>
+
+    <strong><i>Sideload <span class="rec">advanced</span></i></strong>
     <p>
       If you are comfortable with sideloading and manually checking for updates, you can install
       the app via sideloading.
@@ -41,7 +45,12 @@ include('../includes/header.php');
     <a class="btn secondary" href="https://github.com/yiays/AutoLogout-Manager/releases/latest/download/AutoLogout-Manager.apk" target="_blank">
       Download APK from GitHub
     </a>
-    <br>
+    <hr>
+
+    <strong>AutoLogout is open source</strong>
+    <p>
+      Feel free to browse the source code and build from scratch.
+    </p>
     <a class="btn secondary" href="https://github.com/yiays/AutoLogout-Manager" target="_blank">
       View source code
     </a>

@@ -27,6 +27,31 @@
       color: rgb(25, 156, 216);
     }
 
+    .show-win, .show-mac, .show-android, .show-ios, .show-linux, .show-cros, .show-unknown {
+      display: none;
+    }
+    body.os-win .show-win {
+      display: inherit;
+    }
+    body.os-mac .show-mac {
+      display: inherit;
+    }
+    body.os-android .show-android {
+      display: inherit;
+    }
+    body.os-ios .show-ios {
+      display: inherit;
+    }
+    body.os-linux .show-linux {
+      display: inherit;
+    }
+    body.os-cros .show-cros {
+      display: inherit;
+    }
+    body.os-unknown .show-unknown {
+      display: inherit;
+    }
+
     code {
       position: relative;
       display: inline-block;
@@ -52,6 +77,12 @@
       color: rgb(106, 190, 229);
     }
 
+    .rec {
+      margin-left: 0.5em;
+      font-weight: 400;
+      font-style: italic;
+    }
+
     .btn {
       font-size: 1.1rem;
       display: inline-block;
@@ -75,6 +106,69 @@
       background: #fff;
     }
 
+    .smartdl {
+      font-size: 1.1rem;
+      display: inline-grid;
+      grid-template:
+        "a b" auto
+        "c c" auto / max-content min-content;
+      background: #0275ac;
+      padding: 0;
+      box-shadow: rgba(0, 0, 0, 0.5) 0 0.1rem 0.3rem;
+    }
+    .smartdl a {
+      padding: 1rem;
+      line-height: 0.8;
+      margin: 0;
+    }
+    .smartdl > a, .smartdl > label {
+      display: block;
+      padding: 1rem;
+      color: white;
+      pointer-events: auto;
+      cursor: pointer;
+    }
+    .smartdl sub {
+      font-size: 0.7em;
+      line-height: 0;
+    }
+    .smartdl > input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .smartdl > label::after {
+      content: '↓';
+    }
+    .smartdl:has(input:checked) > label::after {
+      content: '↑';
+    }
+    .smartdl > a:hover, label:hover {
+      color: white;
+      background: rgb(25, 156, 216);
+    }
+    .smartdl > .bestdl {
+      border-right: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    .smartdl > .bestdl:not(:link) {
+      cursor: default;
+    }
+    .smartdl > .bestdl:not(:link):hover {
+      background: none;
+    }
+    .smartdl > input:checked + .overflow {
+      display: flex;
+    }
+    .smartdl > .overflow {
+      grid-area: c;
+      display: none;
+      flex-direction: column;
+    }
+    .smartdl > .overflow > .btn {
+      margin: 0;
+      box-shadow: none;
+    }
+
     body {
       position: relative;
       display: flex;
@@ -91,6 +185,7 @@
       padding: 1rem;
       top: 0;
       min-height: 3rem;
+      z-index: 1000;
     }
     header > .logo {
       position: absolute;
@@ -168,6 +263,7 @@
 
     .autohide-panel {
       margin-bottom: 1rem;
+      scroll-margin-top: 15rem;
     }
     .autohide-panel:target {
       width: 100%;
@@ -206,14 +302,17 @@
 
     .carousel {
       display: flex;
+      align-items: center;
+      width: 100%;
       overflow-x: auto;
       gap: 1em;
       padding: 1em;
     }
     .carousel > img {
-      width: auto;
-      height: 25em;
-      box-shadow: rgba(0, 0, 0, 0.3) 0 0.3em 0.5em;
+      width: 25em;
+      height: fit-content;
+      max-width: 90vw;
+      filter: drop-shadow(rgba(0,0,0,0.25) 0 0 0.5em);
     }
 
     .shadow-screenshot {
@@ -267,6 +366,13 @@
       }
     }
   </style>
+  <noscript>
+    <style>
+      .smartdl {
+        display:none;
+      }
+    </style>
+  </noscript>
 </head>
 <body>
   <header>
@@ -275,7 +381,7 @@
     </a>
     <h1><a href="/">AutoLogout</a></h1>
     <nav class="links">
-      <a href="/download/">Download</a>
+      <a href="/download/#stable">Download</a>
       <a href="/app/">AutoLogout Manager</a>
     </nav>
     <?php echo isset($title)? "<h2>$title</h2>": "" ?>

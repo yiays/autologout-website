@@ -17,7 +17,7 @@ include('includes/header.php');
     will either be logged out or the computer will shut down (depending on bedtime).
   </p>
 
-  <a href="/download/" class="btn">Download options</a>
+  <a href="/download/#stable" class="btn">Download options</a>
 </section>
 
 <section>
