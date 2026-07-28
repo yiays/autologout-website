@@ -17,9 +17,9 @@
     };
     const platformResolver = {
       win: /windows/i,
+      ios: /i(pad|phone|pod)/i,
       mac: /mac os/i,
       android: /android/i,
-      ios: /i(pad)?os/i,
       cros: /cros/i,
       linux: /linux/i
     }
@@ -33,6 +33,9 @@
     for(const [os, uaTest] of Object.entries(platformResolver)) {
       if(uaTest.test(navigator.userAgent)) {
         preferedOS = os;
+        if(os == 'mac' && navigator.standalone)
+          // Catch iPad OS disguised as Mac OS
+          preferedOS = 'ios';
         document.body.classList.add(`os-${os}`);
         break;
       }
