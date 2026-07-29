@@ -60,6 +60,7 @@
         if (os == preferedOS && arch == preferedArch) {
           bestfound = true;
           bestdl.setAttribute('href', dlUrl);
+          bestdl.setAttribute('target', '_blank');
           bestdl.innerHTML = `
             &#11015; Download ${fileName}<br>
             <sub>for ${platformsShorthand[os]} ${arch}</sub>

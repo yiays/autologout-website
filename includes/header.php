@@ -176,6 +176,7 @@
       font-family: 'Roboto';
       margin: 0;
       min-height: 100vh;
+      overflow-x: clip;
     }
     header {
       position: sticky;
@@ -303,10 +304,11 @@
     .carousel {
       display: flex;
       align-items: center;
-      width: 100%;
+      box-sizing: border-box;
+      max-width: 100vw;
       overflow-x: auto;
       gap: 1em;
-      padding: 1em;
+      padding: 1em 2em;
     }
     .carousel > img {
       width: 25em;
